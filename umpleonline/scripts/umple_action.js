@@ -1017,7 +1017,7 @@ Action.setExampleType = function setExampleType()
   jQuery("#itemLoadExamples").hide();
   jQuery("#itemLoadExamples2").hide();
   jQuery("#itemLoadExamples3").hide();
-  jQuery("#itemLoadExamples4").hide();
+  //jQuery("#itemLoadExamples4").hide();
      
   if(Page.getExampleType() == "cdModels") {
      jQuery("#itemLoadExamples").show();
@@ -1027,10 +1027,10 @@ Action.setExampleType = function setExampleType()
      jQuery("#itemLoadExamples2").show();
      jQuery("#defaultExampleOption2").prop("selected",true);
    }
-   else if(Page.getExampleType() == "featureModels") {
-     jQuery("#itemLoadExamples4").show();
-     jQuery("#defaultExampleOption4").prop("selected",true);
-   }
+ //  else if(Page.getExampleType() == "featureModels") {
+ //    jQuery("#itemLoadExamples4").show();
+ //    jQuery("#defaultExampleOption4").prop("selected",true);
+ //  }
    else {
      jQuery("#itemLoadExamples3").show();
      jQuery("#defaultExampleOption3").prop("selected",true);
@@ -1058,10 +1058,10 @@ Action.loadExample = function loadExample()
     diagramType="&diagramtype=state";
     jQuery("#genjava").prop("selected",true);
   }
- else if(Page.useGvFeatureDiagram) {
-    diagramType="&diagramtype=GvFeature";
-    jQuery("#genjava").prop("selected",true);
-  }
+ //else if(Page.useGvFeatureDiagram) {
+ //   diagramType="&diagramtype=GvFeature";
+ //   jQuery("#genjava").prop("selected",true);
+ // }
   else if(Page.useStructureDiagram) {
     diagramType="&diagramtype=structure&generateDefault=cpp";
     jQuery("#gencpp").prop("selected",true);
